@@ -19,9 +19,9 @@ function App() {
           placeholder="Enter Markdown..."
           style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box' }}
         ></textarea>
-         <div className="preview" style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box', borderLeft: '1px solid #ccc' }}>
+         <h1 className="preview" style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box', borderLeft: '1px solid #ccc' }}>
            <markdown>{markdownText}</markdown>
-      </div>
+      </h1>
       
       
       
