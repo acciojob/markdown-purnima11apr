@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { markdown } from 'markdown';
 
 function App() {
     const [markdownText, setMarkdownText] = useState('# Hello world');
@@ -20,7 +20,7 @@ function App() {
           style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box' }}
         ></textarea>
          <div className="preview" style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box', borderLeft: '1px solid #ccc' }}>
-           <ReactMarkdown>{markdownText}</ReactMarkdown>
+           <markdown>{markdownText}</markdown>
       </div>
       
       
