@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { markdown } from 'markdown';
+import Markdown from 'react-markdown'
 
 function App() {
     const [markdownText, setMarkdownText] = useState('# Hello world');
@@ -19,9 +19,9 @@ function App() {
           placeholder="Enter Markdown..."
           style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box' }}
         ></textarea>
-         <h1 className="preview" style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box', borderLeft: '1px solid #ccc' }}>
-           <markdown>{markdownText}</markdown>
-      </h1>
+         <div className="preview" style={{ width: '50%', height: '100%', padding: '20px', boxSizing: 'border-box', borderLeft: '1px solid #ccc' }}>
+          <h1><Markdown>{markdownText}</Markdown></h1>
+      </div>
       
       
       
